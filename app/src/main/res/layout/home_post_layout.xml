@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/home_constraint"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/user_post_card"
+    android:layout_marginVertical="15dp"
+    android:layout_marginHorizontal="10dp"
+    android:elevation="5dp">
+
+
+    <LinearLayout
+        android:id="@+id/home_first_actions_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/home_post_image_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:id="@+id/img_post_creator_image"
+            android:layout_height="70dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/dashboard_profile_image_container"
+            android:contentDescription="@string/profile_image"
+            android:maxWidth="@dimen/round_image_width"
+            android:maxHeight="100dp"
+            android:scaleType="center"
+            android:src="@drawable/auth_person" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:paddingVertical="8dp"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp">
+
+            <TextView
+                android:id="@+id/txt_post_creator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|top"
+
+                android:background="@drawable/text_button_background"
+                android:fontFamily="@font/roboto_medium"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="@color/custom_primary_accent_color"
+                android:textSize="18sp"
+
+
+                />
+
+            <TextView
+                android:id="@+id/txt_post_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|bottom"
+                android:fontFamily="@font/roboto_light"
+                android:gravity="bottom"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_follow_me"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center|end"
+            android:text="@string/follow_me"
+            android:textColor="@color/action_blue"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+   <!-- <TextView
+        android:id="@+id/home_line_1"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+
+        android:layout_marginVertical="3dp"
+        android:background="@drawable/line"
+        app:layout_constraintBottom_toTopOf="@id/home_post_image_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/home_first_actions_layout" />
+-->
+    <LinearLayout
+        android:id="@+id/home_post_image_container"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/home_first_actions_layout" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical"
+        android:gravity="bottom|center_horizontal"
+        app:layout_constraintTop_toTopOf="@id/home_post_image_container"
+        app:layout_constraintBottom_toBottomOf="@id/home_post_image_container"
+        android:minWidth="50dp"
+        android:minHeight="100dp"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:id="@+id/home_active_image"
+            android:orientation="horizontal"
+            android:padding="7dp"
+            android:layout_gravity="center"
+            android:gravity="bottom|center_horizontal"
+          />
+       <!-- <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/home_post_image_index"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/user_post_card"
+            android:textSize="18sp"
+            android:padding="3dp"
+            android:layout_marginVertical="4dp"
+            android:minWidth="40dp"
+            android:minHeight="40dp"
+            />
+        -->
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:id="@+id/home_post_actions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/home_post_image_container"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:minHeight="48dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/heart"
+                android:background="@android:color/transparent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:layout_marginEnd="10dp"
+                android:contentDescription="@string/like_post"
+                android:minHeight="48dp"
+                android:src="@drawable/heart_outline" />
+
+            <ImageButton
+                android:id="@+id/comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:padding="4dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/comment_post"
+                android:minHeight="48dp"
+                android:src="@drawable/comment_icon" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_likes_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto_medium"
+            android:minHeight="48dp"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/home_line_2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginVertical="3dp"
+        android:background="@drawable/line"
+        app:layout_constraintBottom_toTopOf="@id/home_post_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/home_post_actions" />
+
+    <TextView
+        android:id="@+id/home_post_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:minHeight="80dp"
+        android:padding="4dp"
+        android:textSize="18sp"
+        android:maxHeight="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/home_line_2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

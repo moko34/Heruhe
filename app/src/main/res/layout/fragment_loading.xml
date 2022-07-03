@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.dashboard.UserDashboardFragment"
+    android:orientation="vertical"
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <ImageView
+            android:id="@+id/img_cover"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/custom_grey"
+            android:contentDescription="@string/cover_content"
+            android:scaleType="center"
+            android:minHeight="180dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/dashboard_profile_image_container"
+            android:contentDescription="@string/profile_image"
+            android:maxWidth="@dimen/profile_image_height"
+            android:maxHeight="@dimen/profile_image_height"
+            android:scaleType="center"
+            android:cropToPadding="true"
+            android:layout_marginStart="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/img_cover"
+            android:translationY="-40dp"
+            android:elevation="6dp"/>
+
+
+        <LinearLayout
+            android:id="@+id/info_list"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+
+            android:orientation="horizontal"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/profile_image"
+            app:layout_constraintTop_toBottomOf="@id/img_cover">
+
+            <LinearLayout
+                style="@style/dashboard_item_list_style"
+                android:layout_marginHorizontal="4dp">
+
+                <TextView
+                    android:id="@+id/txt_post_count"
+                    style="@style/dashboard_count_style"
+                    android:minWidth="40dp"
+                    android:background="@color/custom_grey"
+                     />
+
+                <TextView
+                    android:background="@color/custom_grey"
+                    android:id="@+id/txt_post_caption"
+
+                    style="@style/dashboard_count_style_info"
+                     />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/dashboard_item_list_style"
+                android:layout_marginHorizontal="4dp">
+
+                <TextView
+                    android:id="@+id/txt_following_count"
+                    android:background="@color/custom_grey"
+                    style="@style/dashboard_count_style"
+                    />
+
+                <TextView
+                    android:background="@color/custom_grey"
+                    android:id="@+id/txt_following_caption"
+                    style="@style/dashboard_count_style_info"
+                     />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/dashboard_item_list_style"
+                android:layout_marginHorizontal="4dp">
+
+                <TextView
+                    android:background="@color/custom_grey"
+                    android:id="@+id/txt_follows_count"
+                    style="@style/dashboard_count_style"
+                    />
+
+                <TextView
+                    android:background="@color/custom_grey"
+                    android:id="@+id/txt_follows_caption"
+                    style="@style/dashboard_count_style_info"
+                     />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="4dp"
+            android:background="@drawable/line"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginVertical="3dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/info_list"/>
+
+
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/post_fragment_Container"
+            android:layout_width="match_parent"
+            android:padding="4dp"
+            android:background="@color/custom_grey"
+            android:layout_height="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/line"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
+

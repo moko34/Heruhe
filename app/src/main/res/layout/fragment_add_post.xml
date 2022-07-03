@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.dashboard.posts.AddPostFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:id="@+id/add_post_image_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/add_post_image_layout_height"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true">
+
+        <ImageView
+            android:id="@+id/add_post_imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:background="@color/white"
+
+            android:contentDescription="@string/post_image"
+            android:scaleType="center" />
+
+        <ImageButton
+            android:id="@+id/btn_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/add_post_imageView"
+            android:layout_marginVertical="4dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/dark_background"
+            android:contentDescription="@string/delete"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:src="@drawable/delete" />
+
+
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/add_post_image_container"
+        android:layout_alignParentEnd="true"
+       android:background="@drawable/scroll_gradient"
+        >
+    <LinearLayout
+        android:id="@+id/image_preview_container"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:visibility="gone"
+        android:padding="4dp"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+    </HorizontalScrollView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/add_post_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scroll"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:padding="8dp"
+        android:background="@color/custom_grey"/>
+
+</RelativeLayout>

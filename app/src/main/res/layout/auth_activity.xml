@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context=".AuthActivity">
+
+<!--
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:orientation="vertical"
+     android:layout_height="match_parent"
+     android:gravity="center">
+
+   <ProgressBar
+       android:id="@+id/progress"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginVertical="10dp"
+       android:fadingEdge="horizontal"
+       android:indeterminate="false"
+       android:padding="10dp"
+       android:progressTint="@color/custom_primary_color" />
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+
+       android:text="@string/hang_in_there"
+       android:fontFamily="@font/roboto_medium"
+       android:textSize="24sp"
+       android:gravity="center"
+       />
+
+ </LinearLayout>
+-->
+  <LinearLayout
+      android:visibility="gone"
+      android:id="@+id/anim_layout"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:gravity="center"
+      android:orientation="horizontal"
+      >
+    <TextView
+        android:id="@+id/txt_anim_right"
+        style="@style/loading_drawable_style"
+        />
+    <TextView
+        style="@style/loading_drawable_style"
+        android:id="@+id/txt_anim_center"
+        android:background="@drawable/spinner_anim_around"
+        />
+    <TextView
+        android:id="@+id/txt_anim_left"
+        android:background="@drawable/spinner_anim_black"
+        style="@style/loading_drawable_style" />
+
+  </LinearLayout>
+
+<LinearLayout
+    android:background="@drawable/auth_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="10dp"
+    android:orientation="vertical">
+  <TextView
+      android:textColor="@color/black"
+      android:id="@+id/txt_caption"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="5dp"
+      android:fontFamily="@font/roboto_medium"
+      android:textSize="24sp"
+      android:layout_marginBottom="15dp"
+      android:textAlignment="center"
+      android:gravity="center"
+      android:text="@string/login_caption"
+      />
+
+  <com.google.android.material.textfield.TextInputLayout
+      android:visibility="gone"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:minHeight="@dimen/edittext_height"
+      app:hintAnimationEnabled="true"
+      android:clipToPadding="true"
+      app:errorEnabled="false"
+      android:layout_marginBottom="10dp"
+      android:layout_marginHorizontal="10dp"
+      android:id="@+id/username_layout"
+      app:startIconDrawable="@drawable/auth_person">
+
+    <EditText
+        android:id="@+id/edt_username"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:autofillHints="username"
+        android:fontFamily="@font/roboto"
+        android:hint="@string/username"
+        android:inputType="text"
+        android:paddingHorizontal="5dp"
+        android:singleLine="true"
+        android:textColorHint="#616161"
+        android:textSize="18sp"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <com.google.android.material.textfield.TextInputLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:minHeight="@dimen/edittext_height"
+      android:id="@+id/layout_email_username"
+      app:hintAnimationEnabled="true"
+      android:clipToPadding="true"
+      app:errorEnabled="false"
+      android:layout_marginHorizontal="10dp"
+      android:layout_marginBottom="10dp"
+      app:startIconDrawable="@drawable/auth_email"
+      >
+
+    <EditText
+
+        android:id="@+id/edt_email_username"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:autofillHints="emailAddress"
+        android:fontFamily="@font/roboto"
+        android:hint="@string/email_username"
+        android:inputType="textEmailAddress"
+        android:nextFocusDown="@+id/edt_password"
+        android:paddingHorizontal="5dp"
+        android:singleLine="true"
+        android:textColorHint="#616161"
+        android:textSize="18sp"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <com.google.android.material.textfield.TextInputLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:minHeight="@dimen/edittext_height"
+      app:hintAnimationEnabled="true"
+      android:clipToPadding="true"
+      app:errorEnabled="false"
+      android:layout_marginBottom="10dp"
+      app:endIconCheckable="true"
+      app:passwordToggleEnabled="true"
+      android:id="@+id/password_layout"
+      android:layout_marginHorizontal="10dp"
+      app:startIconDrawable="@drawable/auth_password">
+
+    <EditText
+        android:nextFocusDown="@string/username"
+        android:id="@+id/edt_password"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:autofillHints="password"
+        android:fontFamily="@font/roboto"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:paddingHorizontal="5dp"
+        android:singleLine="true"
+        android:textSize="18sp"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+  </com.google.android.material.textfield.TextInputLayout>
+
+
+
+  <com.google.android.material.textfield.TextInputLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:minHeight="@dimen/edittext_height"
+      app:errorEnabled="false"
+      android:layout_marginBottom="10dp"
+      android:visibility="gone"
+      android:layout_marginHorizontal="10dp"
+      android:id="@+id/confirm_password_layout"
+      app:startIconDrawable="@drawable/auth_password"
+      android:hint="@string/confirm_pass">
+
+    <EditText
+
+        android:id="@+id/edt_confirm_password"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:autofillHints="username"
+        android:fontFamily="@font/roboto"
+        android:inputType="textPassword"
+        android:paddingHorizontal="5dp"
+        android:singleLine="true"
+        android:textColorHint="#616161"
+        android:textSize="18sp"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <Button
+      android:backgroundTint="@color/black"
+      android:id="@+id/btn_auth"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="11dp"
+      android:text="@string/login"
+      android:layout_marginHorizontal="10dp"
+      app:cornerRadius="8dp"
+      android:layout_marginVertical="10dp"
+      android:fontFamily="@font/roboto_medium"/>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginVertical="10dp"
+      android:orientation="horizontal"
+      android:gravity="center"
+      android:layout_marginHorizontal="10dp"
+      android:backgroundTint="@color/custom_primary_color"
+      >
+
+    <TextView
+        android:id="@+id/txt_auth_options"
+        android:layout_width="0dp"
+        android:backgroundTint="@color/black"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:layout_weight="1.5"
+        android:fontFamily="@font/roboto"
+        android:gravity="center|start"
+        android:text="@string/signup_option"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_auth_options"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:layout_marginHorizontal="5dp"
+        android:background="@android:color/transparent"
+        android:minWidth="@dimen/edittext_height"
+        android:padding="0dp"
+        android:text="@string/signup" />
+  </LinearLayout>
+
+
+
+</LinearLayout>
+</LinearLayout>

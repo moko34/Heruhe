@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Moko/Downloads/Heruhe/app/src/main/res/drawable/animated_heart.xml" value="0.1" />
+        <entry key="..\:/Users/Moko/Downloads/Heruhe/app/src/main/res/drawable/arrow_next.xml" value="0.1" />
+        <entry key="..\:/Users/Moko/Downloads/Heruhe/app/src/main/res/drawable/auth_card.xml" value="0.1" />
+        <entry key="..\:/Users/Moko/Downloads/Heruhe/app/src/main/res/drawable/button_drawable.xml" value="0.1" />
+        <entry key="..\:/Users/Moko/Downloads/Heruhe/app/src/main/res/drawable/comment_icon.xml" value="0.1" />
+        <entry key="..\:/Users/Moko/Downloads/Heruhe/app/src/main/res/drawable/dark_background.xml" value="0.1" />
+        <entry key="..\:/Users/Moko/Downloads/Heruhe/app/src/main/res/drawable/dashboard_camera.xml" value="0.1" />
+        <entry key="..\:/Users/Moko/Downloads/Heruhe/app/src/main/res/drawable/dashboard_person.xml" value="0.1" />
+        <entry key="..\:/Users/Moko/Downloads/Heruhe/app/src/main/res/drawable/dashboard_profile_image_container.xml" value="0.1" />
+        <entry key="..\:/Users/Moko/Downloads/Heruhe/app/src/main/res/drawable/delete.xml" value="0.1" />
+        <entry key="..\:/Users/Moko/Downloads/Heruhe/app/src/main/res/drawable/drawable_follow_button.xml" value="0.1" />
+        <entry key="..\:/Users/Moko/Downloads/Heruhe/app/src/main/res/drawable/edittext_wrapper.xml" value="0.1" />
+        <entry key="..\:/Users/Moko/Downloads/Heruhe/app/src/main/res/drawable/finish_post_card.xml" value="0.1" />
+        <entry key="..\:/Users/Moko/Downloads/Heruhe/app/src/main/res/drawable/finish_post_edittext_bg.xml" value="0.1" />
+        <entry key="..\:/Users/Moko/Downloads/Heruhe/app/src/main/res/drawable/heart.xml" value="0.1" />
+        <entry key="..\:/Users/Moko/Downloads/Heruhe/app/src/main/res/drawable/heart_icon.xml" value="0.1" />
+        <entry key="..\:/Users/Moko/Downloads/Heruhe/app/src/main/res/drawable/heart_outline.xml" value="0.1" />
+        <entry key="..\:/Users/Moko/Downloads/Heruhe/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.1" />
+        <entry key="..\:/Users/Moko/Downloads/Heruhe/app/src/main/res/drawable/image_oval.xml" value="0.1" />
+        <entry key="..\:/Users/Moko/Downloads/Heruhe/app/src/main/res/drawable/inactive_oval.xml" value="0.1" />
+        <entry key="..\:/Users/Moko/Downloads/Heruhe/app/src/main/res/drawable/line.xml" value="0.1" />
+        <entry key="..\:/Users/Moko/Downloads/Heruhe/app/src/main/res/drawable/selected_image_drawable.xml" value="0.1" />
+        <entry key="..\:/Users/Moko/Downloads/Heruhe/app/src/main/res/drawable/spinner_anim_.xml" value="0.1" />
+        <entry key="..\:/Users/Moko/Downloads/Heruhe/app/src/main/res/drawable/spinner_anim_around.xml" value="0.1" />
+        <entry key="..\:/Users/Moko/Downloads/Heruhe/app/src/main/res/drawable/spinner_anim_black.xml" value="0.1" />
+        <entry key="..\:/Users/Moko/Downloads/Heruhe/app/src/main/res/drawable/text_button_background.xml" value="0.1" />
+        <entry key="..\:/Users/Moko/Downloads/Heruhe/app/src/main/res/drawable/user_post_card.xml" value="0.1" />
+        <entry key="..\:/Users/Moko/Downloads/Heruhe/app/src/main/res/layout-v28/fragment_feed.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/Moko/Downloads/Heruhe/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/Moko/Downloads/Heruhe/app/src/main/res/layout/auth_activity.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/Moko/Downloads/Heruhe/app/src/main/res/layout/fragment_add_post.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/Moko/Downloads/Heruhe/app/src/main/res/layout/fragment_dashboard.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/Moko/Downloads/Heruhe/app/src/main/res/layout/fragment_feed.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/Moko/Downloads/Heruhe/app/src/main/res/layout/fragment_finish_post.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/Moko/Downloads/Heruhe/app/src/main/res/layout/fragment_home.xml" value="0.22" />
+        <entry key="..\:/Users/Moko/Downloads/Heruhe/app/src/main/res/layout/fragment_item.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/Moko/Downloads/Heruhe/app/src/main/res/layout/fragment_item_list.xml" value="0.16145833333333334" />
+        <entry key="..\:/Users/Moko/Downloads/Heruhe/app/src/main/res/layout/fragment_loading.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/Moko/Downloads/Heruhe/app/src/main/res/layout/fragment_notifications.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/Moko/Downloads/Heruhe/app/src/main/res/layout/fragment_query.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/Moko/Downloads/Heruhe/app/src/main/res/layout/fragment_scrolling.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/Moko/Downloads/Heruhe/app/src/main/res/layout/fragment_search.xml" value="0.1" />
+        <entry key="..\:/Users/Moko/Downloads/Heruhe/app/src/main/res/layout/fragment_search2.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/Moko/Downloads/Heruhe/app/src/main/res/layout/fragment_user_dashboard.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/Moko/Downloads/Heruhe/app/src/main/res/layout/home_post_layout.xml" value="0.1694915254237288" />
+        <entry key="..\:/Users/Moko/Downloads/Heruhe/app/src/main/res/layout/post_layout.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/Moko/Downloads/Heruhe/app/src/main/res/menu/bottom_nav_menu.xml" value="0.12864583333333332" />
+        <entry key="..\:/Users/Moko/Downloads/Heruhe/app/src/main/res/menu/dashboard_menu.xml" value="0.12864583333333332" />
+        <entry key="..\:/Users/Moko/Downloads/Heruhe/app/src/main/res/menu/next_menu.xml" value="0.1" />
+        <entry key="..\:/Users/Moko/Downloads/Heruhe/app/src/main/res/menu/search_menu.xml" value="0.17552083333333332" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

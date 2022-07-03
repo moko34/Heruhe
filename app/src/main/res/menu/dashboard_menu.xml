@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/dashboard_add_post"
+        android:contentDescription="@string/add_post"
+        android:icon="@drawable/dashboard_add_menu"
+        android:title="@string/add_post"
+        app:showAsAction="always" />
+
+    <item android:title="@string/add_photo"
+        android:id="@+id/dashboard_add_photo"
+        android:icon="@drawable/dashboard_camera"
+        app:showAsAction="always"
+        android:contentDescription="@string/add_photo"
+        />
+    <item android:id="@+id/menu_next"
+        android:title="@string/next"
+        app:showAsAction="ifRoom"
+        android:contentDescription="@string/next"
+        android:icon="@drawable/arrow_next"
+        android:visible="false"/>
+
+    <item android:id="@+id/dashboard_logout"
+        android:title="@string/logout"
+        app:showAsAction="ifRoom"
+        android:contentDescription="@string/logout"
+        android:icon="@drawable/vector_logout"
+        />
+
+</menu>

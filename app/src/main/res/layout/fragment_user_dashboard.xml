@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.dashboard.UserDashboardFragment"
+    android:orientation="vertical"
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <ImageView
+            android:id="@+id/img_cover"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/custom_grey"
+            android:contentDescription="@string/cover_content"
+            android:scaleType="center"
+            android:src="@drawable/dashboard_person"
+            android:minHeight="180dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/dashboard_profile_image_container"
+            android:contentDescription="@string/profile_image"
+            android:maxWidth="@dimen/profile_image_height"
+            android:maxHeight="@dimen/profile_image_height"
+            android:scaleType="center"
+            android:cropToPadding="true"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/dashboard_person"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/img_cover"
+            android:translationY="-40dp"
+            android:elevation="6dp"/>
+
+
+        <LinearLayout
+            android:id="@+id/info_list"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+
+            android:orientation="horizontal"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/profile_image"
+            app:layout_constraintTop_toBottomOf="@id/img_cover">
+
+            <LinearLayout
+                style="@style/dashboard_item_list_style">
+
+                <TextView
+                    android:id="@+id/txt_post_count"
+                    style="@style/dashboard_count_style"
+                    android:text="@string/zero" />
+
+                <TextView
+                    android:id="@+id/txt_post_caption"
+                    style="@style/dashboard_count_style_info"
+                    android:text="@string/posts" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/dashboard_item_list_style">
+
+                <TextView
+                    android:id="@+id/txt_following_count"
+                    style="@style/dashboard_count_style"
+                    android:text="@string/zero" />
+
+                <TextView
+                    android:id="@+id/txt_following_caption"
+                    style="@style/dashboard_count_style_info"
+                    android:text="@string/following" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/dashboard_item_list_style">
+
+                <TextView
+                    android:id="@+id/txt_follows_count"
+                    style="@style/dashboard_count_style"
+                    android:text="@string/zero" />
+
+                <TextView
+                    android:id="@+id/txt_follows_caption"
+                    style="@style/dashboard_count_style_info"
+                    android:text="@string/follows" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <Button
+
+            android:gravity="center"
+            android:drawableLeft="@drawable/vector_person_add"
+            app:layout_constraintTop_toBottomOf="@id/info_list"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/btn_follow"
+            android:text="@string/follow_me"
+            android:paddingHorizontal="10dp"
+            android:fontFamily="@font/roboto_medium"
+            android:layout_marginHorizontal="20dp"
+            android:minWidth="100dp"
+            android:textAllCaps="false"
+            android:textAlignment="center"
+            android:backgroundTint="@color/action_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="4dp"
+            android:background="@drawable/line"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginVertical="3dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_follow"/>
+
+        <TextView
+            android:id="@+id/txt_no_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="26sp"
+            android:fontFamily="@font/roboto_medium"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/no_post"
+            app:layout_constraintTop_toBottomOf="@id/line"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+           <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/user_post_fragment_container"
+            android:layout_width="match_parent"
+            android:padding="4dp"
+            android:visibility="gone"
+            android:background="@color/custom_grey"
+            android:layout_height="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_no_post"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
+
